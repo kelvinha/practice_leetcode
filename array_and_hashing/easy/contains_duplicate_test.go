@@ -1,4 +1,4 @@
-package array_and_hashing
+package easy
 
 import "testing"
 
