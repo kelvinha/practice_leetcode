@@ -6,8 +6,8 @@ import (
 )
 
 func TestAnagram(t *testing.T) {
-	log.Println(validationAnagram("aacc", "ccac"))
-	//log.Println(validationAnagram("anagram", "nagaram"))
+	//log.Println(validationAnagram("aacc", "ccac"))
+	log.Println(validationAnagram("anagram", "nagaram"))
 }
 
 func validationAnagram(s, t string) bool {
@@ -40,6 +40,8 @@ func validationAnagram(s, t string) bool {
 				return false
 			}
 		}
+
+		log.Println("test passed")
 
 		return true
 	}
