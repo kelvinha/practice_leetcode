@@ -8,10 +8,11 @@ import (
 func TestGroupAnagram(t *testing.T) {
 	//log.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
 	//log.Println(groupAnagrams([]string{"cab", "tin", "pew", "duh", "may", "ill", "buy", "bar", "max", "doc"}))
-	//log.Println(groupAnagrams([]string{"ill", "duh"}))
-	log.Println(groupAnagrams([]string{"duh", "ban"}))
-
-	// [["max"],["buy"],["doc"],["may"],["ill"],["duh"],["tin"],["bar"],["pew"],["cab"]]
+	//log.Println(groupAnagrams([]string{"duh", "ill"}))
+	//log.Println(groupAnagrams([]string{"ac", "c"}))
+	//log.Println(groupAnagrams([]string{"hhhhu", "tttti", "tttit", "hhhuh", "hhuhh", "tittt"}))
+	log.Println(groupAnagrams([]string{"tho", "tin", "erg", "end", "pug", "ton", "alb", "mes", "job", "ads", "soy", "toe", "tap", "sen", "ape", "led", "rig", "rig", "con", "wac", "gog", "zen", "hay", "lie", "pay", "kid", "oaf", "arc", "hay", "vet", "sat", "gap", "hop", "ben", "gem", "dem", "pie", "eco", "cub", "coy", "pep", "wot", "wee"}))
+	// [["wee"],["pep"],["cub"],["eco"],["dem"],["gap"],["vet"],["job"],["ben"],["toe"],["hay","hay"],["mes"],["ads"],["alb"],["wot"],["gem"],["oaf"],["hop"],["ton"],["pug"],["end"],["con"],["coy"],["sat"],["soy"],["pay"],["tin"],["pie"],["ape"],["tho"],["erg"],["sen"],["rig","rig"],["tap"],["wac"],["gog"],["led"],["zen"],["arc"],["lie"],["kid"]]
 }
 
 func groupAnagrams(strs []string) [][]string {
@@ -26,6 +27,7 @@ func groupAnagrams(strs []string) [][]string {
 
 		// loop each char for set up the key and set the value like 97 -> a
 		for i := 0; i < len(runes); i++ {
+			//log.Printf("word: %s rune:%d", string(runes[i]), runes[i])
 			keyRune += runes[i]
 			valueChar[string(runes[i])] = runes[i]
 		}
@@ -41,6 +43,8 @@ func groupAnagrams(strs []string) [][]string {
 
 			if len(validateCharacter) == len(runes) {
 				groupingAnagram[keyRune] = append(groupingAnagram[keyRune], word)
+			} else {
+				result = append(result, []string{string(runes)})
 			}
 		} else {
 			collectChar[keyRune] = valueChar
