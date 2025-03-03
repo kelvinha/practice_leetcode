@@ -6,13 +6,12 @@ import (
 )
 
 func TestGroupAnagram(t *testing.T) {
-	//log.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
+	log.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
 	//log.Println(groupAnagrams([]string{"cab", "tin", "pew", "duh", "may", "ill", "buy", "bar", "max", "doc"}))
 	//log.Println(groupAnagrams([]string{"duh", "ill"}))
 	//log.Println(groupAnagrams([]string{"ac", "c"}))
 	//log.Println(groupAnagrams([]string{"hhhhu", "tttti", "tttit", "hhhuh", "hhuhh", "tittt"}))
-	log.Println(groupAnagrams([]string{"tho", "tin", "erg", "end", "pug", "ton", "alb", "mes", "job", "ads", "soy", "toe", "tap", "sen", "ape", "led", "rig", "rig", "con", "wac", "gog", "zen", "hay", "lie", "pay", "kid", "oaf", "arc", "hay", "vet", "sat", "gap", "hop", "ben", "gem", "dem", "pie", "eco", "cub", "coy", "pep", "wot", "wee"}))
-	// [["wee"],["pep"],["cub"],["eco"],["dem"],["gap"],["vet"],["job"],["ben"],["toe"],["hay","hay"],["mes"],["ads"],["alb"],["wot"],["gem"],["oaf"],["hop"],["ton"],["pug"],["end"],["con"],["coy"],["sat"],["soy"],["pay"],["tin"],["pie"],["ape"],["tho"],["erg"],["sen"],["rig","rig"],["tap"],["wac"],["gog"],["led"],["zen"],["arc"],["lie"],["kid"]]
+	//log.Println(groupAnagrams([]string{"tho", "tin", "erg", "end", "pug", "ton", "alb", "mes", "job", "ads", "soy", "toe", "tap", "sen", "ape", "led", "rig", "rig", "con", "wac", "gog", "zen", "hay", "lie", "pay", "kid", "oaf", "arc", "hay", "vet", "sat", "gap", "hop", "ben", "gem", "dem", "pie", "eco", "cub", "coy", "pep", "wot", "wee"}))
 }
 
 func groupAnagrams(strs []string) [][]string {
