@@ -6,12 +6,13 @@ import (
 )
 
 func TestGroupAnagram(t *testing.T) {
-	log.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
+	//log.Println(groupAnagrams([]string{"tho", "tin", "erg", "end", "pug", "ton", "alb", "mes", "job", "ads", "soy", "toe", "tap", "sen", "ape", "rig", "rig", "con", "wac", "gog", "zen", "hay", "hay"}))
+	//log.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
 	//log.Println(groupAnagrams([]string{"cab", "tin", "pew", "duh", "may", "ill", "buy", "bar", "max", "doc"}))
 	//log.Println(groupAnagrams([]string{"duh", "ill"}))
 	//log.Println(groupAnagrams([]string{"ac", "c"}))
 	//log.Println(groupAnagrams([]string{"hhhhu", "tttti", "tttit", "hhhuh", "hhuhh", "tittt"}))
-	//log.Println(groupAnagrams([]string{"tho", "tin", "erg", "end", "pug", "ton", "alb", "mes", "job", "ads", "soy", "toe", "tap", "sen", "ape", "led", "rig", "rig", "con", "wac", "gog", "zen", "hay", "lie", "pay", "kid", "oaf", "arc", "hay", "vet", "sat", "gap", "hop", "ben", "gem", "dem", "pie", "eco", "cub", "coy", "pep", "wot", "wee"}))
+	log.Println(groupAnagrams([]string{"tho", "tin", "erg", "end", "pug", "ton", "alb", "mes", "job", "ads", "soy", "toe", "tap", "sen", "ape", "led", "rig", "rig", "con", "wac", "gog", "zen", "hay", "lie", "pay", "kid", "oaf", "arc", "hay", "vet", "sat", "gap", "hop", "ben", "gem", "dem", "pie", "eco", "cub", "coy", "pep", "wot", "wee"}))
 }
 
 func groupAnagrams(strs []string) [][]string {
