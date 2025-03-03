@@ -30,6 +30,8 @@ func groupAnagrams(strs []string) [][]string {
 			keyRune += runes[i]
 			valueChar[string(runes[i])] = runes[i]
 		}
+		// TODO: keyRune diubah jadi sort asc
+		// TODO: handling duplicate key
 
 		// validate the key
 		if _, ok := collectChar[keyRune]; ok {
