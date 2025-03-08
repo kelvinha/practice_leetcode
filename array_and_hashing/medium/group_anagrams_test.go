@@ -8,7 +8,7 @@ import (
 
 func TestGroupAnagram(t *testing.T) {
 	log.Println(groupAnagramsV2([]string{"eat", "tea", "tan", "ate", "nat", "bat", "hay", "rig", "hay"}))
-	//log.Println(groupAnagramsV1([]string{"eat", "tea", "tan", "ate", "nat", "bat", "hay", "rig", "hay"}))
+	log.Println(groupAnagramsV1([]string{"eat", "tea", "tan", "ate", "nat", "bat", "hay", "rig", "hay"}))
 	//log.Println(groupAnagramsV1([]string{"ray", "cod", "abe", "ned", "arc", "jar", "owl", "pop", "paw", "sky", "yup", "fed", "jul", "woo", "ado", "why", "ben", "mys", "den", "dem", "fat", "you", "eon", "sui", "oct", "asp", "ago", "lea", "sow", "hus", "fee", "yup", "eve", "red", "flo", "ids", "tic", "pup", "hag", "ito", "zoo"}))
 }
 
