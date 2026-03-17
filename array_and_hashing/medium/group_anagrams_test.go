@@ -79,3 +79,7 @@ func groupAnagramsV2(strs []string) [][]string {
 
 	return result
 }
+
+func groupAnagramsV3(strs []string) [][]string {
+	return [][]string{}
+}
