@@ -8,10 +8,10 @@ import (
 
 func TestTopKFrequentElements(t *testing.T) {
 	//nums := []int{1, 2}
-	nums := []int{5, 2, 5, 3, 5, 3, 1, 1, 3}
+	//nums := []int{5, 2, 5, 3, 5, 3, 1, 1, 3}
 	//nums := []int{1, 1, 1, 2, 2, 3}
-	//nums := []int{3, 1, 0, 9, 2, 3, 1, 4, 1}
-	k := 2
+	nums := []int{3, 1, 0, 9, 2, 3, 1, 4, 1}
+	k := 3
 	log.Println(topKFrequent(nums, k))
 }
 
@@ -23,7 +23,6 @@ func topKFrequent(nums []int, k int) []int {
 		value int
 	}
 
-	var frequents []Frequent
 	for _, num := range nums {
 		if saveTheDuplicateNums[num] == num {
 			saveTheDuplicateNums[num] += 1
@@ -32,6 +31,7 @@ func topKFrequent(nums []int, k int) []int {
 		}
 	}
 
+	var frequents []Frequent
 	for key, v := range saveTheDuplicateNums {
 		if v > 1 {
 			frequents = append(frequents, Frequent{key: key, value: v})
